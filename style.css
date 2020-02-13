@@ -4,7 +4,7 @@ body {
   font-size: 100%;
   line-height: 175%;
   margin: 0 15% 0;
-  background-color: rgb(245, 255, 250);
+  background: url(whitecorner.jpeg) no-repeat center 0px fixed;
 }
 header {
   margin-top: 0;
@@ -26,6 +26,10 @@ a:link {
 }
 a:visited {
   color: #937393;
+}
+a:focus, a:hover {
+  color: white;
+  background-color: black;
 }
 
 a:active {
