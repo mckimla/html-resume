@@ -102,23 +102,3 @@ ul.g {
 div.g {
   text-indent: 50px;
 }
-#info p {
-  font-style: italic;
-}
-.price {
-  font-family: Georgia, serif;
-  font-style: italic;
-}
-p.warning, sup {
-  font-size: small;
-}
-.label {
-  font-weight: bold;
-  font-variant: small-caps;
-  font-style: normal;
-}
-
-h2 + p {
-  text-align: center;
-  font-style: italic;
-}
