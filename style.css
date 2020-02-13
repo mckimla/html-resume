@@ -4,7 +4,7 @@ body {
   font-size: 100%;
   line-height: 175%;
   margin: 0 15% 0;
-  background: url('whitecorner.jpeg') no-repeat center 0px fixed;
+  background: url("whitecorner.jpeg") no-repeat center 0px fixed;
 }
 header {
   margin-top: 0;
