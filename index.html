@@ -9,23 +9,140 @@
 	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  	<link rel="stylesheet" href="style.css">
 		<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+
+
+		<style>
+
+			main {
+                display: grid;
+                grid-template-columns: 2.5fr 1fr;
+                grid-template-rows: .25fr .5fr .1fr 1fr .1fr 1fr .25fr;
+                grid-template-areas:
+                "header header" 
+                "photo skills"
+                "exp edu"
+                "dub degrees"
+                "organizations degrees"
+                "orglist degrees"
+                "footer footer" ;
+            }
+
+           
+            #photo img { width: 100%; 
+            	
+            }
+
+            header { grid-area: photo;
+            	display: grid;
+            	grid-template-columns: 2fr 1fr;
+            	grid-template-rows: 1fr;
+            	grid-template-areas: "pic contact";
+            	padding: 9px;
+            }
+            #header {grid-area: header;}
+            #skills { grid-area: skills;}
+            #edu { grid-area: edu;}
+            #degrees { grid-area: degrees;}
+            #exp { grid-area: exp;}
+            #dub { grid-area: dub;}
+            #organizations { grid-area: organizations; }
+            #orglist { grid-area: orglist; }
+            footer { grid-area: footer;}
+            #contact { grid-area: contact;}
+            #photo { grid-area: photo;}
+
+            #exp, #organizations { 
+            	background-color: #ccc;
+            	padding: 2px;
+            	margin-right: 10px;
+            	margin-bottom: 2px;
+
+            }
+
+            #dub, #orglist {
+            	margin-right: 9px;
+            	padding: 9px;
+            }
+
+
+            #contact {
+            	margin-left: 10px;
+            	border: 3px solid #ccc;
+            	padding: 9px;
+            }
+
+            #skills, #edu, #degrees {
+            	margin-left: 40px;
+            }
+            
+
+            /*header {
+            	background-color: red;
+            }
+
+            #skills {
+            	background-color: orange;
+            }
+
+            #exp {
+            	background-color: yellow;
+            }
+
+            #edu {
+            	background-color: green;
+            }
+
+            #jmu {
+            	background-color: purple;
+            }
+
+            #psc { 
+            	background-color: blue;
+            }
+
+            #degrees {
+            	background-color: pink;
+            }
+
+            #certs {
+            	background-color: teal;
+            }*/
+
+            body {
+            	font-family: Lato, sans-serif;
+            }
+
+		</style>
 	</head>
 
+
+
+
 	<body>
+		<main>
+			<div id="header">
+				<h1>Lindsey McKim Resume</h1>
+			</div>
+			<header>
 		<div style="background-image: url('whitecorner.jpeg');">
 		</div>
+			<div id="photo>">
+				<p><img src="headshot.JPG" alt="professional headshot" width="280" height="400"></p>
+			</div>
 
-
-		<h1>Lindsey McKim Resume</h1>
-
+			<div id="contact">
 			<p> Lindsey McKim<br>
 			Contact: mckimla@dukes.jmu.edu
 			</p>
+			</div>
+			</header>
 
-		<p><img src="headshot.JPG" alt="professional headshot" width="280" height="400"></p>
-
+			<div id="exp">
 			<h2>Experience</h2>
+			</div>
 
+			<div id="dub">
 			<h3><a href="https://www.jmu.edu/theatredance/" target="_blank">James Madison University School of Theatre and Dance</a>, Harrisonburg VA</h3>
 
 			<h4>Student Dubbing/Media Position &ndash; Fall 2019 - Present</h4>
@@ -37,7 +154,9 @@
 				<li>Work closely with professors to create digital content</li>
 				</ul>
 				</div>
+			
 		
+			
 			<h3><a href="https://www.jmu.edu/theatredance/experiences/student-organizations.shtml" target="_blank">James Madison University Dance Theatre</a>, Harrisonburg VA</h3>
 
 			<h4>Merchandise Chair &ndash; Fall 2019 - Present</h4>
@@ -49,6 +168,9 @@
 				<li>Create merchandise to fundraise for the organization</li>
 				</ul>
 				</div>
+			
+
+
 			
 			<h3><a href="http://www.fairmountchildcare.org/#home-1-section" target="_blank">Fairmount Christian Church</a>, Mechanicsville, VA</h3>
 
@@ -62,10 +184,16 @@
 				<li>Created activities and games for the children, supervised field trips, helped with homework</li>
 				</ul>
 				</div>
+
+			</div>
 			
+			
+			<div id="edu">
 			<h2>Education</h2>
+			</div>
+			<div id="degrees">
 			<h3>James Madison University </h3>
-			<h4>Bachelor's of Arts in Dance</h4>
+			<h4>Bachelor of Arts in Dance</h4>
 			<strong>Courses</strong>
 			
 				<div class="d">
@@ -80,8 +208,9 @@
 				</ul>
 				</div>
 			
+			
 
-			<h4>Bachelor's of Arts in Media Arts in Design with a concentration in Interactive Design</h4>
+			<h4>Bachelor of Arts in Media Arts and Design with a concentration in Interactive Design</h4>
 			<strong>Courses</strong>
 			
 				<div class="e">
@@ -95,20 +224,33 @@
 				<li>User Interaction Design</li>
 				</ul>
 				</div>
+			</div>
 			
+			<div id="skills">
 			<h2>Skills</h2>
 			<h3>Experience in:</h3>
 			
 				<div class="f">
 				<ul class="f">
-				<li>Adobe Illustrator, Adobe InDesign, Adobe Photoshop, Final Cut Pro, Microsoft Powerpoint, Microsoft Word, Poster Design, Video Editing/Dubbing</li>
+				<li>Adobe Illustrator</li>
+				<li>Adobe InDesign</li> 
+				<li>Adobe Photoshop</li>
+				<li>Final Cut Pro</li>
+				<li>Microsoft Powerpoint</li> 
+				<li>Microsoft Word</li>
+				<li>Poster Design</li> 
+				<li>Video Editing/Dubbing</li>
 				</ul>
 				</div>
+
+			</div>
 			
 
-			
+			<div id="organizations">
 			<h2>Organizations</h2>
+			</div>
 
+			<div id="orglist">
 				<div class="g">
 				<ul class="g">
 				<li>Dance Theatre Merchandise Chair &ndash; Fall 2019 - Present</li>
@@ -117,7 +259,8 @@
 				<li>Associate Dance Ensemble Performer &ndash; Fall 2017 - Present</li>
 				</ul>
 				</div>
+			</div>
 			
-
+			</main>
 	</body>
 </html>
