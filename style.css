@@ -44,7 +44,7 @@ h1 {
   color: rgb(255,255,255);
 }
 h2 {
-  font: bold 1.5em Lato, sans-serif;
+  font: bold 1.7em Lato, sans-serif;
   text-transform: uppercase;
   letter-spacing: .5em;
   color: rgb(0,139,139);
@@ -102,3 +102,5 @@ ul.g {
 div.g {
   text-indent: 50px;
 }
+
+
