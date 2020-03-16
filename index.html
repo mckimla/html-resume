@@ -17,10 +17,10 @@
 			main {
                 display: grid;
                 grid-template-columns: 2.5fr 1fr;
-                grid-template-rows: .25fr .5fr .1fr 1fr .1fr 1fr .25fr;
+                grid-template-rows: .25fr .5fr .1fr 1fr .1fr .25fr .15fr;
                 grid-template-areas:
                 "header header" 
-                "photo skills"
+                "pcontact skills"
                 "exp edu"
                 "dub degrees"
                 "organizations degrees"
@@ -33,14 +33,9 @@
             	
             }
 
-            header { grid-area: photo;
-            	display: grid;
-            	grid-template-columns: 2fr 1fr;
-            	grid-template-rows: 1fr;
-            	grid-template-areas: "pic contact";
-            	padding: 9px;
-            }
+           
             #header {grid-area: header;}
+            header {grid-area: pcontact;}
             #skills { grid-area: skills;}
             #edu { grid-area: edu;}
             #degrees { grid-area: degrees;}
@@ -54,8 +49,8 @@
 
             #exp, #organizations { 
             	background-color: #ccc;
-            	padding: 2px;
-            	margin-right: 10px;
+            	padding: 7px;
+            	margin-right: 9px;
             	margin-bottom: 2px;
 
             }
@@ -67,15 +62,31 @@
 
 
             #contact {
-            	margin-left: 10px;
+            	margin-left: 9px;
             	border: 3px solid #ccc;
             	padding: 9px;
+   
             }
 
             #skills, #edu, #degrees {
             	margin-left: 40px;
             }
             
+            div.h {
+  			text-indent: 50px;
+			}
+
+			div.i {
+  			text-indent: 50px;
+			}
+
+			div.j {
+  			text-indent: 50px;
+			}
+
+			div.k {
+  			text-indent: 50px;
+			}
 
             /*header {
             	background-color: red;
@@ -118,7 +129,6 @@
 
 
 
-
 	<body>
 		<main>
 			<div id="header">
@@ -143,7 +153,7 @@
 			</div>
 
 			<div id="dub">
-			<h3><a href="https://www.jmu.edu/theatredance/" target="_blank">James Madison University School of Theatre and Dance</a>, Harrisonburg VA</h3>
+			<h3><a href="https://www.jmu.edu/theatredance/" target="_blank">James Madison University School of Theatre and Dance</a>, Harrisonburg, VA</h3>
 
 			<h4>Student Dubbing/Media Position &ndash; Fall 2019 - Present</h4>
 				
@@ -157,7 +167,7 @@
 			
 		
 			
-			<h3><a href="https://www.jmu.edu/theatredance/experiences/student-organizations.shtml" target="_blank">James Madison University Dance Theatre</a>, Harrisonburg VA</h3>
+			<h3><a href="https://www.jmu.edu/theatredance/experiences/student-organizations.shtml" target="_blank">James Madison University Dance Theatre</a>, Harrisonburg, VA</h3>
 
 			<h4>Merchandise Chair &ndash; Fall 2019 - Present</h4>
 			
@@ -179,9 +189,9 @@
 				<div class="c">
 				<ul class="c">
 				<li>Worked throughout the summer and breaks from school</li>
-				<li>Had a classroom of 15-25 children</li>
+				<li>Managed a classroom of 15-25 children</li>
 				<li>Worked with other co-teachers in the room</li>
-				<li>Created activities and games for the children, supervised field trips, helped with homework</li>
+				<li>Created activities and games for the kids, supervised field trips, helped with homework</li>
 				</ul>
 				</div>
 
@@ -198,7 +208,7 @@
 			
 				<div class="d">
 				<ul class="d">
-				<li>Intermediate and Advanced Modern</li>
+				<li><div class="k">Intermediate and Advanced</div><div class="j"> Modern</div></li>
 				<li>Ballet</li>
 				<li>Improvisation</li>
 				<li>Compostion</li>
@@ -215,7 +225,7 @@
 			
 				<div class="e">
 				<ul class="e">
-				<li>Mediated Communication: Issues and Skills</li>
+				<li><div class="h">Mediated Communication:</div> <div class="i"> Issues and Skills</div></li>
 				<li>Intro to Media Arts and Design</li>
 				<li>Visual Communication Design</li>
 				<li>User Experience Design</li>
@@ -260,7 +270,10 @@
 				</ul>
 				</div>
 			</div>
-			
+		
+			<footer>
+				<p>&copy; 2020 LAM</p>
+			</footer>
 			</main>
 	</body>
 </html>
